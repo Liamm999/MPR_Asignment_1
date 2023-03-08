@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/mountain"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/purple_500"
+        android:text="Test"
+        />
+
+
+    <GridView
+        android:id="@+id/hGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:clipToPadding="false"
+        android:numColumns="5"
+        android:layout_alignBaseline="@+id/title"
+        android:paddingTop="20dp"
+        tools:ignore="MissingConstraints">
+
+
+    </GridView>
+
+    <GridView
+        android:id="@+id/kGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:clipToPadding="false"
+        android:numColumns="5"
+        tools:ignore="MissingConstraints"
+        android:layout_alignBaseline="@+id/title"
+        android:paddingTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/changeViewLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/shadow_layout"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/hiraganaViewBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="floatBtn"
+            android:text="Hiragana"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape_chosen"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/katakanaViewBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="floatBtn"
+            android:textAlignment="center"
+            android:text="Katakana"
+            tools:ignore="MissingConstraints"
+            android:textColor="@color/purple_200"
+            android:background="@drawable/button_shape"
+
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
