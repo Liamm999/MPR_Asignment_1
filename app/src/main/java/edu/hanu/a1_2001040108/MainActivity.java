@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if (hLetters.get(i).getAudio() != 0) {
+//                    MediaPlayer mp = MediaPlayer.create(MainActivity.this, hLetters.get(i).getAudio());
                     MediaPlayer.create(MainActivity.this, hLetters.get(i).getAudio()).reset();
                     MediaPlayer.create(MainActivity.this, hLetters.get(i).getAudio()).start();
                 }
