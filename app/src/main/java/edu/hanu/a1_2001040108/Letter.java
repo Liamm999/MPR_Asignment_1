@@ -16,8 +16,10 @@ public class Letter {
     }
 
     public int getId() {
+        System.out.println();
         return id;
     }
+   
 
     public int getAudio() {
         return audio;
